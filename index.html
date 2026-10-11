@@ -31,11 +31,11 @@
   .badge img { height: 54px; width: auto; }
   .requires { color: #6b6b70; font-size: .85rem; margin: 14px 0 0; }
 
-  .shots { display: flex; gap: 16px; overflow-x: auto; padding: 32px 20px; width: fit-content; max-width: 100%; margin: 0 auto;
-           scroll-snap-type: x proximity; -webkit-overflow-scrolling: touch; }
-  .shots img { height: 360px; border-radius: 16px; scroll-snap-align: center; flex: 0 0 auto;
-               box-shadow: 0 6px 20px rgba(10,40,100,.15); }
-  @media (max-width: 640px) { .shots img { height: 240px; } }
+  .showcase { max-width: 1000px; margin: -8px auto 0; padding: 0 20px; }
+  .showcase img { display: block; width: 100%; height: auto; border-radius: 14px;
+                  box-shadow: 0 10px 32px rgba(10,40,100,.16); }
+  .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 20px; margin-top: 20px; }
+  .gallery img { box-shadow: 0 6px 20px rgba(10,40,100,.12); }
 
   section.features { padding: 24px 0 8px; }
   h2 { font-size: 1.5rem; text-align: center; margin: 24px 0 4px; }
@@ -84,14 +84,14 @@
   </div>
 </header>
 
-<div class="shots">
-  <img src="assets/shot-1.jpg" alt="From canvas to your listing — the Upload to App Store Connect sheet with every language and device in one upload" loading="lazy">
-  <img src="assets/shot-2.jpg" alt="Photoreal mockups across pages — a tilted iPhone spanning three screenshot pages" loading="lazy">
-  <img src="assets/shot-3.jpg" alt="Build store-ready screenshots in an evening — three iPhone pages with captions in the Framely canvas" loading="lazy">
-  <img src="assets/shot-4.jpg" alt="One document, every screen — six iPhone pages side by side" loading="lazy">
-  <img src="assets/shot-5.jpg" alt="Every device, every frame included — iPad pages in the same project file" loading="lazy">
-  <img src="assets/shot-6.jpg" alt="Title, subtitle, highlight — two-layer typography with inline markup" loading="lazy">
-  <img src="assets/shot-7.jpg" alt="One click, one folder, one device — the export sheet with a numbered folder per platform" loading="lazy">
+<div class="showcase">
+  <img src="assets/shot-3.jpg" alt="Build store-ready screenshots in an evening — three iPhone pages with captions in the Framely canvas">
+  <div class="gallery">
+    <img src="assets/shot-1.jpg" alt="From canvas to your listing — the Upload to App Store Connect sheet with every language and device in one upload" loading="lazy">
+    <img src="assets/shot-2.jpg" alt="Photoreal mockups across pages — a tilted iPhone spanning three screenshot pages" loading="lazy">
+    <img src="assets/shot-5.jpg" alt="Every device, every frame included — iPad pages in the same project file" loading="lazy">
+    <img src="assets/shot-7.jpg" alt="One click, one folder, one device — the export sheet with a numbered folder per platform" loading="lazy">
+  </div>
 </div>
 
 <section class="features">
